@@ -1,233 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEDGER — Vol. I</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anvayee — Where Design Meets Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,900;1,6..96,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="issue-strip">Vol. I · No. 01 — Full-Stack &amp; Blockchain Edition — Pune, India</div>
-
-  <div class="wrap">
-    <header>
-      <div class="logo">LEDG<em>ER</em></div>
-      <nav>
-        <a href="#contents">Contents</a>
-        <a href="#features">Features</a>
-        <a href="#profile">Profile</a>
-        <a href="#colophon">Colophon</a>
+  <div class="masthead-bar">
+    <div class="wrap">
+      <div class="brand">Anvayee</div>
+      <nav class="masthead-nav">
+        <a href="#edit">The Edit</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <button class="menu-toggle" onclick="document.querySelector('nav').style.display='flex';document.querySelector('nav').style.flexDirection='column';document.querySelector('nav').style.position='absolute';document.querySelector('nav').style.top='90px';document.querySelector('nav').style.right='32px';document.querySelector('nav').style.background='var(--ivory)';document.querySelector('nav').style.border='1px solid var(--ink)';document.querySelector('nav').style.padding='16px 20px';this.style.display='none';">Menu</button>
-    </header>
-
-    <section class="hero">
-      <div class="hero-ghost">01</div>
-      <div class="kicker">Cover Story</div>
-      <h1>Full-Stack,<br>On-Chain.</h1>
-      <p class="hero-sub">Interfaces built in React. Logic written in Solidity. A developer's practice, laid out the way a magazine lays out a life — issue by issue, feature by feature.</p>
-      <div class="byline-row">
-        <span>Words &amp; Code — R. Kapoor</span>
-        <span>Pune, India</span>
-        <span>Vol. I, 2026</span>
-      </div>
-    </section>
-
-    <section id="contents">
-      <div class="section-head">
-        <div class="kicker">Contents</div>
-        <h2 class="section-title">What's Inside</h2>
-      </div>
-
-      <div class="toc-row">
-        <span class="toc-label">Frontend</span>
-        <span class="toc-skills">HTML, CSS, React</span>
-        <span class="toc-leader"></span>
-        <span class="toc-page">04</span>
-      </div>
-      <div class="toc-row">
-        <span class="toc-label">Data</span>
-        <span class="toc-skills">SQL</span>
-        <span class="toc-leader"></span>
-        <span class="toc-page">06</span>
-      </div>
-      <div class="toc-row">
-        <span class="toc-label">Chain</span>
-        <span class="toc-skills">Solidity, Blockchain Fundamentals</span>
-        <span class="toc-leader"></span>
-        <span class="toc-page">08</span>
-      </div>
-      <div class="toc-row pending">
-        <span class="toc-label">Next Issue</span>
-        <span class="toc-skills">Rust — in progress</span>
-        <span class="toc-leader"></span>
-        <span class="toc-page">10</span>
-      </div>
-    </section>
-
-    <section id="features">
-      <div class="section-head">
-        <div class="kicker">Features</div>
-        <h2 class="section-title">Field Notes</h2>
-      </div>
-
-      <div class="feature">
-        <div class="feature-art">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#F5F2EB"/>
-            <g stroke="#14120F" stroke-width="1.2" fill="none">
-              <path d="M20 60 H140 V120 H260 V60 H380"/>
-              <path d="M20 180 H100 V240 H220 V180 H380"/>
-              <circle cx="140" cy="60" r="5" fill="#C81D25" stroke="none"/>
-              <circle cx="260" cy="120" r="5" fill="#14120F" stroke="none"/>
-              <circle cx="100" cy="180" r="5" fill="#14120F" stroke="none"/>
-              <circle cx="220" cy="240" r="5" fill="#C81D25" stroke="none"/>
-            </g>
-          </svg>
-        </div>
-        <div class="feature-copy">
-          <div class="feature-num"><em>Feature I</em></div>
-          <h3 class="feature-title">Escrowed</h3>
-          <p class="feature-deck">A trustless escrow flow for two-party deals — funds release themselves the moment both sides confirm. No middleman, no phone calls.</p>
-          <div class="tag-row">
-            <span class="tag">Solidity</span>
-            <span class="tag">React</span>
-            <span class="tag">Ethers.js</span>
-          </div>
-          <a class="feature-link" href="#">Read the case study →</a>
-        </div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-art">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#F5F2EB"/>
-            <g stroke="#14120F" stroke-width="1.2" fill="none">
-              <path d="M40 40 V260"/>
-              <path d="M40 90 H180"/>
-              <path d="M40 150 H240 V90"/>
-              <path d="M40 210 H150 V150"/>
-              <circle cx="180" cy="90" r="5" fill="#C81D25" stroke="none"/>
-              <circle cx="240" cy="90" r="5" fill="#14120F" stroke="none"/>
-              <circle cx="150" cy="150" r="5" fill="#14120F" stroke="none"/>
-            </g>
-          </svg>
-        </div>
-        <div class="feature-copy">
-          <div class="feature-num"><em>Feature II</em></div>
-          <h3 class="feature-title">Ledgerline</h3>
-          <p class="feature-deck">An on-chain expense splitter for shared households — settlements recorded on-chain, running balances indexed off-chain for instant lookups.</p>
-          <div class="tag-row">
-            <span class="tag">Solidity</span>
-            <span class="tag">React</span>
-            <span class="tag">SQL</span>
-          </div>
-          <a class="feature-link" href="#">Read the case study →</a>
-        </div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-art">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#F5F2EB"/>
-            <g stroke="#14120F" stroke-width="1.2" fill="none">
-              <path d="M60 250 V150 H160 V50 H340"/>
-              <path d="M60 150 H240 V250"/>
-              <circle cx="160" cy="150" r="5" fill="#14120F" stroke="none"/>
-              <circle cx="240" cy="150" r="5" fill="#C81D25" stroke="none"/>
-              <circle cx="160" cy="50" r="5" fill="#14120F" stroke="none"/>
-            </g>
-          </svg>
-        </div>
-        <div class="feature-copy">
-          <div class="feature-num"><em>Feature III</em></div>
-          <h3 class="feature-title">Quorum</h3>
-          <p class="feature-deck">A token-gated voting dApp for small DAOs — one wallet, one vote, results tallied on-chain the moment the poll closes.</p>
-          <div class="tag-row">
-            <span class="tag">Solidity</span>
-            <span class="tag">React</span>
-            <span class="tag">Blockchain</span>
-          </div>
-          <a class="feature-link" href="#">Read the case study →</a>
-        </div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-art">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#F5F2EB"/>
-            <g stroke="#14120F" stroke-width="1.2" fill="none">
-              <path d="M30 100 H130 V200 H230 V100 H330"/>
-              <path d="M130 200 V260"/>
-              <path d="M230 100 V40"/>
-              <circle cx="130" cy="100" r="5" fill="#C81D25" stroke="none"/>
-              <circle cx="230" cy="200" r="5" fill="#14120F" stroke="none"/>
-            </g>
-          </svg>
-        </div>
-        <div class="feature-copy">
-          <div class="feature-num"><em>Feature IV</em></div>
-          <h3 class="feature-title">Stackroom</h3>
-          <p class="feature-deck">A full-stack marketplace built the traditional way — relational data modelling, server-rendered listings, and a React storefront on top.</p>
-          <div class="tag-row">
-            <span class="tag">React</span>
-            <span class="tag">SQL</span>
-            <span class="tag">HTML/CSS</span>
-          </div>
-          <a class="feature-link" href="#">Read the case study →</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="profile">
-      <div class="section-head">
-        <div class="kicker">Profile</div>
-        <h2 class="section-title">The Long Read</h2>
-      </div>
-      <div class="profile-grid">
-        <div class="dropcap">
-          <p>Started on the usual road — HTML, CSS, then React, then enough SQL to stop being afraid of a schema. The full-stack fundamentals came first, on purpose, before any of the chain work.</p>
-          <p>Solidity came next, and with it a different way of thinking: code that can't be quietly patched at 2am, state that everyone can see, mistakes that are permanent. Blockchain fundamentals — consensus, gas, wallets, the shape of a transaction — followed from there.</p>
-          <p>Rust is the current chapter, still being written.</p>
-        </div>
-        <blockquote>
-          "A web app forgives you. A smart contract doesn't. Learning to write for the second kind changed how I write the first."
-          <cite>— R. Kapoor</cite>
-        </blockquote>
-      </div>
-    </section>
-
-    <section id="colophon" class="colophon">
-      <div class="section-head">
-        <div class="kicker">Colophon</div>
-        <h2 class="section-title">Get in Touch</h2>
-      </div>
-      <div class="colophon-grid">
-        <div class="colophon-links">
-          <a href="mailto:hello@example.com">hello@example.com</a>
-          <a href="https://github.com/yourhandle" target="_blank" rel="noopener">github.com/yourhandle</a>
-          <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">linkedin.com/in/yourhandle</a>
-        </div>
-        <p class="colophon-note">LEDGER is a one-person publication, printed digitally and duplicated endlessly. No repositories were disclosed in the making of this issue.</p>
-      </div>
-      <div class="colophon-foot">
-        <span>© 2026 Ledger — Issue No. 01</span>
-        <span>Set in Fraunces &amp; IBM Plex Mono</span>
-      </div>
-    </section>
+      <div class="issue-tag">Vol. 01</div>
+    </div>
   </div>
 
+  <section class="cover">
+    <div class="wrap masthead-wordmark">
+      <h1>ANVAYEE</h1>
+    </div>
+
+    <div class="wrap cover-photo-area">
+      <div class="cover-lines-left">
+        <div class="coverline-group">
+          <p>Anvayee's new obsession:<strong>Blockchain</strong></p>
+        </div>
+        <div class="coverline-group">
+          <p><strong>Building the Future</strong></p>
+        </div>
+      </div>
+
+      <div class="photo-frame">
+        <span class="placeholder-mark">Your Photo Here</span>
+      </div>
+
+      <div class="cover-lines-right">
+        <div class="vol-tag">Vol. 01</div>
+        <p class="editorial-tag">Editorial for<br>Creative<br>Developers</p>
+      </div>
+    </div>
+
+    <div class="wrap cover-footer">
+      <h2 class="cover-tagline">Fall in Love with Building</h2>
+      <p class="cover-subhead">Where Design Meets Code</p>
+      <p class="cover-desc">A collection of projects, experiments, and ideas exploring frontend development, blockchain, and AI through the lens of thoughtful design.</p>
+      <div class="cover-ctas">
+        <a class="btn primary" href="https://github.com/anvayeem-spec" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="mailto:anvaimhaske67@gmail.com">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="edit">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Skills &amp; Stack</div>
+        <h2 class="section-title">The <em>Edit</em></h2>
+        <div class="kicker-line"></div>
+      </div>
+      <div class="edit-index">
+        <div class="edit-row"><span class="numeral">I.</span><div><h3>Rust</h3><p class="desc">Systems programming, memory safety, performance.</p></div><span class="tag learning">Learning</span></div>
+        <div class="edit-row"><span class="numeral">II.</span><div><h3>Blockchain Basics</h3><p class="desc">Consensus, wallets, transactions, gas.</p></div><span class="tag">Core</span></div>
+        <div class="edit-row"><span class="numeral">III.</span><div><h3>Solidity</h3><p class="desc">Smart contracts for EVM-compatible chains.</p></div><span class="tag">Core</span></div>
+        <div class="edit-row"><span class="numeral">IV.</span><div><h3>SQL</h3><p class="desc">Relational data, schema design, everyday queries.</p></div><span class="tag">Core</span></div>
+        <div class="edit-row"><span class="numeral">V.</span><div><h3>React</h3><p class="desc">Component-driven interfaces and application state.</p></div><span class="tag">Core</span></div>
+        <div class="edit-row"><span class="numeral">VI.</span><div><h3>HTML &amp; CSS</h3><p class="desc">Semantic structure, responsive layout, considered detail.</p></div><span class="tag">Core</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Profile</div>
+        <h2 class="section-title">About <em>Me</em></h2>
+        <div class="kicker-line"></div>
+      </div>
+      <div class="about">
+        <p><span class="drop">I</span>'m a full-stack developer building with HTML, CSS, React, and SQL — now moving into blockchain, writing smart contracts in Solidity and learning the fundamentals that make decentralized systems work.</p>
+        <p>Rust is next: rounding out the stack on the systems side as I go deeper into on-chain development. Every build, however basic, gets pushed to GitHub.</p>
+        <div class="about-tags">
+          <span>Full-Stack</span>
+          <span>Blockchain</span>
+          <span>Open Source</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="back-cover" id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Back Cover</div>
+      <h2 class="back-title" style="margin-top:16px;">Let's build something <em>on-chain</em>.</h2>
+      <div class="contact-links">
+        <a class="btn primary" href="https://github.com/anvayeem-spec" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="mailto:anvaimhaske67@gmail.com">Email</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/anvai-m-22123536a" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="imprint">
+        <span>Printed in Code</span>
+        <span>Vol. 01</span>
+        <span>Anvayee — Where Design Meets Code</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> Anvayee</span>
+      <span>Built with HTML &amp; CSS</span>
+    </div>
+  </footer>
+
   <script>
-    const features = document.querySelectorAll('.feature');
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const revealTargets = document.querySelectorAll('.edit-row');
     const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+          io.unobserve(entry.target);
+        }
       });
-    }, {threshold:0.2});
-    features.forEach(f=>io.observe(f));
+    }, { threshold: 0.15 });
+    revealTargets.forEach(el=>io.observe(el));
   </script>
 
 </body>
